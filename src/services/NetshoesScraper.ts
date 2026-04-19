@@ -144,7 +144,7 @@ export class NetshoesScraper {
       // Cria e retorna a Entidade do Produto
       return new Product(
         title ?? 'Título não encontrado',
-        price ?? 'Preço não encontrado',
+        price ?? 'Item indisponível ou preço não encontrado',
         image ?? 'Imagem não encontrada',
         description ?? 'Descrição não encontrada'
       );

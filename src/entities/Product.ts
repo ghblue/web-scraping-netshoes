@@ -11,23 +11,6 @@ export class Product {
     this.description = description;
   }
 
-  // Getters para acesso individual caso seja necessário futuramente
-  public getTitle(): string {
-    return this.title;
-  }
-
-  public getPrice(): string {
-    return this.price;
-  }
-
-  public getImage(): string {
-    return this.image;
-  }
-
-  public getDescription(): string {
-    return this.description;
-  }
-
   // Objeto JSON formatado para integrações ou saídas
   public toJSON(): object {
     return {
@@ -38,7 +21,6 @@ export class Product {
     };
   }
 
-  // Método de impressão no console requisitado pelo teste técnico
   public print(): void {
     console.log("=== Produto Extraído ===");
     console.log(`Título:    ${this.title}`);

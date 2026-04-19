@@ -31,19 +31,32 @@ _(Nota: O projeto conta com as tipagens e o executador em tempo real `ts-node` d
 
 ## ▶️ Como Rodar o Projeto
 
-Você tem duas formas de rodar o código. Com ou sem parâmetros na URL:
+Você possui duas formas de utilizar o projeto: pela **Interface Gráfica (Web)** ou pelo **Terminal (CLI)**.
 
-Para rodar com a URL padrão do código, apenas utilize:
+### 🖥️ Interface Gráfica (Modo Recomendado)
+
+Para iniciar o servidor web que contém uma interface de usuário moderna. Nela, você pode inserir a URL de forma amigável e visualizar imediatamente os dados e a imagem do produto retornado.
+
+Para iniciar, execute:
+
+```bash
+npm run ui
+```
+*(Ou alternativamente: `npx ts-node src/server.ts`)*
+
+Após o servidor iniciar, abra o seu navegador e acesse: **http://localhost:3000**
+
+---
+
+### 💻 Via Terminal (CLI)
+
+Se preferir utilizar pelo terminal com a URL padrão de exemplo já configurada no código, execute:
 
 ```bash
 npm run start
 ```
 
-_(Ele irá buscar um tênis de exemplo configurado no `index.ts`)_.
-
----
-
-Caso queira passar diretamente a **sua** URL da Netshoes pelo terminal, pode fazer isso assim (com npx e ts-node):
+Caso queira passar diretamente a **sua** URL da Netshoes no terminal de forma dinâmica, utilize:
 
 ```bash
 npx ts-node src/index.ts "INSERIR_URL_AQUI"
